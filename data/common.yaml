@@ -1,5 +1,31 @@
 ---
 sudo::configs:
+  'lse':
+    'template_epp':
+      'filename': 'sudo/grant_priv_access1.epp'
+      'params':
+        'user_spec':
+          - 'foo'
+          - 'bar'
+        'run_as':
+          - 'root'
+          - 'whatev'
+        'commands':
+          - '/usr/bin/ls'
+          - '/usr/bin/rm'
+  'iops':
+    'template_epp':
+      'filename': 'sudo/grant_priv_access2.epp'
+      'params':
+        'user_spec':
+          - 'foo'
+          - 'bar'
+        'run_as':
+          - 'root'
+          - 'whatev'
+        'commands':
+          - '/usr/bin/ls'
+          - '/usr/bin/rm'
   'pat':
     'content': 'pat ALL=(ALL) PASSWD: ALL'
   'eppadmins':
