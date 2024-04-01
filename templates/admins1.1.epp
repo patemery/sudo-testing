@@ -1,0 +1,7 @@
+<%- | String $ad_role_group,
+      Integer $count
+| -%>
+# epp
+# ad_role_group = <%= $ad_role_group %>
+# count = <%= $count %>
+eppadmins ALL=(ALL) PASSWD: ALL

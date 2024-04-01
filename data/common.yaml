@@ -1,0 +1,16 @@
+---
+sudo::configs:
+  'pat':
+    'content': 'pat ALL=(ALL) PASSWD: ALL'
+  'eppadmins':
+    'template': 'sudo/admins1.epp'
+  'eppadmins2':
+    'template_epp':
+      'filename': 'sudo/admins1.1.epp'
+      'params':
+        'ad_role_group': 'foobar'
+        'count': 5
+  'erbadmins':
+    'template': "sudo/admins2.erb"
+  'erbdefault':
+    'template': "sudo/admins3"

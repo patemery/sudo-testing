@@ -1,0 +1,2 @@
+# erb default
+erbdefault ALL=(ALL) PASSWD: ALL
