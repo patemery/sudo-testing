@@ -2,7 +2,7 @@
 sudo_testing::configs:
   'nse':
     'template_epp':
-      'filename': 'sudo_testing/single_line_allocation.epp'
+      'filename': 'sudo/single_line_allocation.epp'
       'params':
         'user_spec':
           - '%some\ ad\ role'
@@ -12,7 +12,7 @@ sudo_testing::configs:
           - 'ALL'
   'lse':
     'template_epp':
-      'filename': 'sudo_testing/multi_line_allocation.epp'
+      'filename': 'sudo/multi_line_allocation.epp'
       'params':
         'user_spec':
           - 'foo'
@@ -25,7 +25,7 @@ sudo_testing::configs:
           - '/usr/bin/rm'
   'iops':
     'template_epp':
-      'filename': 'sudo_testing/single_line_allocation.epp'
+      'filename': 'sudo/single_line_allocation.epp'
       'params':
         'user_spec':
           - 'foo'
