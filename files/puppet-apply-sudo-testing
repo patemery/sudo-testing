@@ -1,0 +1,3 @@
+sudo /opt/puppetlabs/bin/puppet apply \
+    --modulepath=/home/pat/github \
+    -e 'class{"sudo_testing":}'
